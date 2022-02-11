@@ -54,7 +54,7 @@ def GenDVec(dx, delta, order):
     pts = [ptsn, ptsp]
     DVecs = [[], []]
     # Dvecs Include Derivative Stencils up to 1st order.(0th and 1st).
-    # First Order Derivative is not Needed for this Problem.
+    # Zeroth Order Derivative is not Needed for this Problem.
     for i in range(order + 1):
         DVecs[0].append(np.zeros([round(delta)+1]))
         DVecs[1].append(np.zeros([round(delta)+1]))
